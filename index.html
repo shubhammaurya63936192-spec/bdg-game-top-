@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BDG Game Top - Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <h1>BDG Game Top</h1>
+            </div>
+            <div class="header-right">
+                <select class="game-filter">
+                    <option>All Games</option>
+                    <option>Teen Patti</option>
+                    <option>Rummy</option>
+                    <option>Aviator</option>
+                </select>
+                <button class="refresh-btn">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="stat-info">
+                        <h3>1,247</h3>
+                        <p>Total Players</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-coins"></i></div>
+                    <div class="stat-info">
+                        <h3>₹5.2Cr</h3>
+                        <p>Total Winnings</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-fire"></i></div>
+                    <div class="stat-info">
+                        <h3>2.4K</h3>
+                        <p>Live Players</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaderboard -->
+            <div class="leaderboard">
+                <div class="leaderboard-header">
+                    <h2>Live Leaderboard</h2>
+                    <div class="sort-buttons">
+                        <button class="sort-btn active" data-sort="rank">Rank</button>
+                        <button class="sort-btn" data-sort="name">Name</button>
+                        <button class="sort-btn" data-sort="winnings">Winnings</button>
+                    </div>
+                </div>
+                <div class="leaderboard-table">
+                    <div class="table-header">
+                        <span>Rank</span>
+                        <span>Player</span>
+                        <span>Game</span>
+                        <span>Winnings</span>
+                        <span>Level</span>
+                    </div>
+                    <div class="table-body" id="leaderboardBody">
+                        <!-- Dynamic content loaded by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BDG Game Top. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
